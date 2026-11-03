@@ -39,6 +39,7 @@ meu-projeto-c/
 ├── data/
 │   └── carteira.txt
 └── README.md
+```
 
 ## Compilação
 gcc -Wall -Wextra -Iinclude src/main.c src/funcoes.c src/modulo.c -o programa
@@ -48,3 +49,8 @@ programa.exe
 
 ## Restrições atendidas
 Sem ordenação
+
+## Desenvolvedores
+* André Luís Costa Figueiredo
+* José Luiz Figueiredo da Silva
+* Pedro Henrique Augutoli Souza
