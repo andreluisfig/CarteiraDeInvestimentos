@@ -1,4 +1,3 @@
-```c
 // Importação das bibliotecas padrão do C e do cabeçalho de funções do projeto
 #include <stdio.h> 
 #include <stdlib.h> 
