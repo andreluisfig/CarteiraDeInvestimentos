@@ -13,13 +13,16 @@ O **Simulador de Carteira de Investimentos** é uma ferramenta intuitiva em ling
 2. **Listar Carteira**: Exibe todos os ativos cadastrados de forma limpa e organizada, apresentando o valor atual e a rentabilidade individual de cada ativo, além do resumo geral.
 3. **Calcular Valor Total**: Soma automaticamente o patrimônio atual acumulado em todos os ativos da carteira e compara com o valor total investido.
 4. **Calcular Rentabilidade Geral**: Compara o montante total gasto na compra com o valor atual de todos os investimentos juntos, entregando a porcentagem exata de ganho ou perda e o resultado em reais.
-5. **Persistência Automática (`carteira.txt`)**: Carrega os ativos automaticamente ao iniciar o sistema e salva todas as alterações em arquivo texto (`data/carteira.txt`) entre execuções.
+5. **Ordenar por Rentabilidade**: Ordena os ativos da carteira do melhor para o pior desempenho utilizando o algoritmo Bubble Sort.
+6. **Simulador Educativo**: Compara o valor total da carteira em investimentos acessíveis (Poupança, Tesouro Selic e CDB) ao longo de 12 meses, explicando rentabilidade e risco em linguagem simples.
+7. **Relatório Final**: Exibe os ativos ordenados, o valor total, a rentabilidade geral, o lucro/prejuízo total e um parágrafo sobre o impacto social do simulador (ODS 8.10 da ONU).
+8. **Persistência Automática (`carteira.txt`)**: Carrega os ativos automaticamente ao iniciar o sistema e salva todas as alterações em arquivo texto (`data/carteira.txt`) entre execuções.
 
 ## Tecnologias Utilizadas
 * **Linguagem**: C (padrão ANSI C / C99)
 * **Ambiente de desenvolvimento**: MinGW-w64
 * **Compilador**: GCC (GNU Compiler Collection)
-* **Bibliotecas Padrão**: `<stdio.h>`
+* **Bibliotecas Padrão**: `<stdio.h>`, `<stdlib.h>`, `<string.h>`
 
 ## Requisitos Mínimos
 * Sistema Operacional Windows, Linux ou macOS;
@@ -40,7 +43,6 @@ meu-projeto-c/
 │   └── carteira.txt
 └── README.md
 ```
-
 ## Compilação
 gcc -Wall -Wextra -Iinclude src/main.c src/funcoes.c src/modulo.c -o programa
 
@@ -48,7 +50,9 @@ gcc -Wall -Wextra -Iinclude src/main.c src/funcoes.c src/modulo.c -o programa
 programa.exe
 
 ## Restrições atendidas
-Sem ordenação
+Todas as etapas anteriores integradas
+
+## Vídeo de Demonstração
 
 ## Desenvolvedores
 * André Luís Costa Figueiredo
