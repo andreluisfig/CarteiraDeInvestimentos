@@ -50,7 +50,7 @@ int carregarCarteira(Ativo carteira[], int maxAtivos) {
 
     /* Le cada linha do arquivo respeitando espacos nos nomes e categorias */
     while (qtd < maxAtivos &&
-           fscanf(arquivo, " %99[^;];%49[^;];%d;%f;%f",
+           fscanf(arquivo, " %99[^;];%49[^;];%d;%lf;%lf",
                   carteira[qtd].nome,
                   carteira[qtd].categoria,
                   &carteira[qtd].quantidade,
